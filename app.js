@@ -28,7 +28,7 @@ function mediumCanvas(){
 }
 function largeCanvas(){
     let large = document.querySelector('.size-l');
-    large.addEventListener("onclick", populateCanvas(128));
+    large.addEventListener("onclick", populateCanvas(64));
 }
 
 function pixelColor(){
