@@ -4,8 +4,230 @@
     box-sizing: border-box;
 }
 
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background-image: url(./images/images.jpg);
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size:auto;
+   
+}
+
+.title{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.size-buttons{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.size-s,.size-m,.size-l{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid black;
+    border-radius: 12px;
+    color: white;
+    background-color:  red;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.size-s:hover{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid  red;
+    border-radius: 12px;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: none;
+} 
+.size-m:hover{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid  red;
+    border-radius: 12px;
+    color:  red;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: none;
+} 
+.size-l:hover{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid  red;
+    border-radius: 12px;
+    color:  red;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: none;
+} 
+
+.container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
 .board{
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     display:grid;
+    background-color: lightblue;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.color-buttons{
+    margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.black-button,.red-button,.blue-button,.green-button,.random-button,.yellow-button, .erase-button,.reset-button{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid black;
+    border-radius: 12px;
+    color: white;
+    background-color:  red;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+}
+
+.black-button:hover{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid  red;
+    border-radius: 12px;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: none;
+}
+.red-button:hover{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid  red;
+    border-radius: 12px;
+    color:  red;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: none;
+}
+.green-button:hover{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid  red;
+    border-radius: 12px;
+    color:  red;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: none;
+}
+.blue-button:hover{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid  red;
+    border-radius: 12px;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: none;
+}
+.yellow-button:hover{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid red;
+    border-radius: 12px;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: none;
+}
+.erase-button:hover{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid red;
+    border-radius: 12px;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: none;
+}
+.random-button:hover{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid red;
+    border-radius: 12px;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: none;
+}
+.reset-button:hover{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid red;
+    border-radius: 12px;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.black-button:active{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid red;
+    border-radius: 12px;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: none;
 }

@@ -12,7 +12,7 @@ function populateCanvas(size){
     for (let i = 0; i < amount; i++){
         let pixel = document.createElement("div");
         pixel.addEventListener("mouseover", pixelColor);
-        pixel.style.backgroundColor= "tomato";
+        pixel.style.backgroundColor= "white";
         board.insertAdjacentElement("beforeend", pixel);
     }
 }
