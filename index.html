@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pixel SketchPad</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1 class="heading">Pixel Sketchpad</h1>
+    </div>
+    <div class="size-buttons">
+        <h4 class="size-heading">Choose the canvas size:</h4>
+        <button class="size-s" value="16" onclick="smallCanvas()">Small - 16x16</button>
+        <button class="size-m" value="32" onclick="mediumCanvas()">Medium - 32x32</button>
+        <button class="size-l" value="128" onclick="largeCanvas()">Large - 128x128</button>
+    </div>
+    <div class="container">
+        <h2 class="grid-heading">Canvas</h2>
+        <p class="cursor-current-action">Cursor current action: (After selecting the canvas the default cursor action is
+            drawing.) </p>
+        <div class="board"></div>
+        <div class="color-buttons">
+            <button class="black-button" onclick="changeColor('Black')">Black</button>
+            <button class="red-button" onclick="changeColor('Red')">Red</button>
+            <button class="blue-button" onclick="changeColor('Blue')">Blue</button>
+            <button class="green-button" onclick="changeColor('Green')">Green</button>
+            <button class="yellow-button" onclick="changeColor('Yellow')">Yellow</button>
+            <button class="erase-button" onclick="changeColor('White')">Erasor</button>
+            <button class="erase-button" onclick="changeColor('Random')">Random</button>
+            <button class="reset-button" onclick="resetCanvas()">Reset</button>
+        </div>
+    </div>
+
+    <script src="./app.js" async defer></script>
+</body>
+
+</html>
